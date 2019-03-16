@@ -4,9 +4,9 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
 import { CadastroLivroPage } from '../pages/cadastro-livro/cadastro-livro';
 import { Buscarlivro2Page } from '../pages/buscarlivro2/buscarlivro2';
+import { DestinoPageModule } from '../pages/destino/destino.module';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -15,19 +15,18 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     HomePage,
-    ListPage,
     CadastroLivroPage,
     Buscarlivro2Page
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    DestinoPageModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage,
     CadastroLivroPage,
     Buscarlivro2Page
   ],

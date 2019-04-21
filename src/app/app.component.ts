@@ -7,6 +7,7 @@ import { HomePage } from '../pages/home/home';
 import { CadastroLivroPage } from '../pages/cadastro-livro/cadastro-livro';
 import { Buscarlivro2Page } from '../pages/buscarlivro2/buscarlivro2';
 import { DestinoPage } from '../pages/destino/destino';
+import { ListarLivrosPage } from '../pages/listar-livros/listar-livros';
 
 @Component({
   templateUrl: 'app.html'
@@ -25,7 +26,8 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage },
       { title: 'Cadastrar Livro', component: CadastroLivroPage},
-      { title: 'Lista de livros', component: Buscarlivro2Page},
+      { title: 'Buscar livros', component: Buscarlivro2Page},
+      { title: 'Lista de livros', component: ListarLivrosPage}
     ];
 
   }

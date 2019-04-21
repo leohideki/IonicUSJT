@@ -10,25 +10,30 @@ import { DestinoPageModule } from '../pages/destino/destino.module';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { ListarLivrosPage } from '../pages/listar-livros/listar-livros';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     CadastroLivroPage,
-    Buscarlivro2Page
+    Buscarlivro2Page,
+    ListarLivrosPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     DestinoPageModule,
+    HttpModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
     CadastroLivroPage,
-    Buscarlivro2Page
+    Buscarlivro2Page,
+    ListarLivrosPage
   ],
   providers: [
     StatusBar,
